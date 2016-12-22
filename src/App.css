@@ -1,41 +1,122 @@
-body   {
+body {
   background: url(./background.png);
   background-repeat: repeat;
-  font: 'Roboto Slab'
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: #8BDCF5;
+}
+
+a {
+  border-bottom: 1px solid transparent;
+}
+
+a:hover {
+  border-bottom: 1px solid #009aca;
+  transition: border-bottom .5s ease;
 }
 
 .App-header {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 
 .App-header h2 {
-  margin: 1rem 0;
-  text-align: center;
   color: #FFEEB9;
   font-size: 36px;
   font-weight: normal;
+  margin: .75rem 0 .5rem 0;
+  text-align: center;
 }
 
-img {
-  height: 300px;
+img.andrew {
   border-radius: 10px;
+  height: 300px;
 }
 
 .App-header h3 {
   color: #FFEEB9;
   font-size: 24px;
   font-weight: normal;
-  margin: 1rem 0;
+  margin: .5rem 0 .75rem 0;
 }
 
-.App-intro {
-  font-size: large;
+div.shadowBox {
+  background: rgba(88, 88, 88, .5);
+  border-radius: 20px;
+  color: #FFFAEC;
+  font-size: 16px;
+  margin: 0 auto;
+  max-width: 300px;
+  padding: .25rem;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+div.navigation {
+  color: #8BDCF5;
+  display: flex;
+  font-size: 18px;
+  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 350px;
+  text-shadow: 1px 1px black;
+}
+
+div.navigation p {
+  margin: 1rem 0 0 0;
+  cursor: pointer;
+}
+
+div.contact {
+  color: #FFF;
+  font-size: 16px;
+  margin: 0 auto 0 .5rem;
+  max-width: 350px;
+}
+
+div.contact p {
+  margin: 0;
+}
+
+div.contact p.margin {
+  margin-top: 1rem;
+}
+
+div.socials {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 350px;
+}
+
+div.socials a:hover {
+  border-bottom: 1px solid transparent;
+  opacity: .75;
+  transition: opacity .2s ease;
+}
+
+img.socials {
+  cursor: pointer;
+  height: 20px;
+  padding: 15px;
+}
+
+img.medium {
+  cursor: pointer;
+  height: 30px;
+  padding: 15px;
+}
+
+@media (min-width: 325px) {
+  div.shadowBox {
+    max-width: 350px;
+  }
+  div.contact {
+    margin: 0 auto;
+  }
 }
