@@ -1,0 +1,41 @@
+body   {
+  background: url(./background.png);
+  background-repeat: repeat;
+  font: 'Roboto Slab'
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-header h2 {
+  margin: 1rem 0;
+  text-align: center;
+  color: #FFEEB9;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+img {
+  height: 300px;
+  border-radius: 10px;
+}
+
+.App-header h3 {
+  color: #FFEEB9;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 1rem 0;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
