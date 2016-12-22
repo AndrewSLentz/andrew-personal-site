@@ -8,7 +8,7 @@ import NoMatch from './NoMatch.js';
 import './index.css';
 
 ReactDOM.render((
-  <Router history={useBasename(() => browserHistory)({ basename: process.env.PUBLIC_URL })} onUpdate={() => window.scrollTo(0, 0)} history={browserHistory}>
+  <Router history={useBasename(() => browserHistory)({ basename: '/' })} onUpdate={() => window.scrollTo(0, 0)}>
     <Route path="/" component={App} />
     <Route path="portfolio" component={Portfolio}/>
     <Route path="*" component={NoMatch}/>
