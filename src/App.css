@@ -18,14 +18,14 @@ a:hover {
   transition: border-bottom .5s ease;
 }
 
-.App-header {
+.header {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.App-header h2 {
+.header h2 {
   color: #FFEEB9;
   font-size: 36px;
   font-weight: normal;
@@ -38,7 +38,7 @@ img.andrew {
   height: 300px;
 }
 
-.App-header h3 {
+.header h3 {
   color: #FFEEB9;
   font-size: 24px;
   font-weight: normal;
@@ -63,7 +63,7 @@ div.navigation {
   justify-content: space-around;
   margin: 0 auto;
   max-width: 350px;
-  text-shadow: 1px 1px black;
+  text-shadow: 2px 2px 1px black;
 }
 
 div.navigation p {
@@ -110,6 +110,19 @@ img.medium {
   cursor: pointer;
   height: 30px;
   padding: 15px;
+}
+
+div.portfolio {
+  text-align: center;
+}
+
+a.project {
+  font-size: 24px;
+  margin-top: 2rem;
+}
+
+a i {
+  color: #FFEEB9;
 }
 
 @media (min-width: 325px) {
