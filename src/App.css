@@ -5,16 +5,17 @@ body {
 }
 
 a {
-  text-decoration: none;
   color: #8BDCF5;
+  text-decoration: none;
 }
 
-a {
+a p {
   border-bottom: 1px solid transparent;
+  display: inline-block;
 }
 
-a:hover {
-  border-bottom: 1px solid #009aca;
+a:hover p {
+  border-bottom: 1px solid #009ACA;
   transition: border-bottom .5s ease;
 }
 
@@ -67,15 +68,15 @@ div.navigation {
 }
 
 div.navigation p {
-  margin: 1rem 0 0 0;
   cursor: pointer;
+  margin: 1rem 0 0 0;
 }
 
 div.contact {
   color: #FFF;
   font-size: 16px;
-  margin: 0 auto 0 .5rem;
   max-width: 350px;
+  text-align: center;
 }
 
 div.contact p {
@@ -95,7 +96,6 @@ div.socials {
 }
 
 div.socials a:hover {
-  border-bottom: 1px solid transparent;
   opacity: .75;
   transition: opacity .2s ease;
 }
@@ -113,16 +113,43 @@ img.medium {
 }
 
 div.portfolio {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   text-align: center;
+}
+
+div.proj {
+  padding: 0 .5rem;
+  width: 100%;
 }
 
 a.project {
   font-size: 24px;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 a i {
   color: #FFEEB9;
+  left: 1rem;
+  position: relative;
+  top: -3px;
+}
+
+i.smaller {
+  font-size: 14px;
+}
+
+a.project p {
+  margin-bottom: .5rem;
+}
+
+p.description {
+  color: #FFF;
+  font-size: 16px;
+  margin: 0 auto 1rem auto;
+  max-width: 350px;
 }
 
 @media (min-width: 325px) {
@@ -131,5 +158,11 @@ a i {
   }
   div.contact {
     margin: 0 auto;
+  }
+}
+
+@media (min-width: 850px) {
+  div.proj {
+    width: 40%;
   }
 }
