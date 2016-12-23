@@ -30,14 +30,6 @@ export default class Portfolio extends Component {
             <a className='project' href='https://andrewslentz.github.io/bootstrap-proj/'><p>Visit Alaska</p><i className="smaller fa fa-arrow-right"></i></a>
             <p className='description'>My first website! A travel site for alaska made with bootstrap.</p>
           </div>
-          <div className="proj">
-            <a className='project' href='https://my-buy.github.io/my-buy-app/'><p>MyBuy</p><i className="smaller fa fa-arrow-right"></i></a>
-            <p className='description'>An example of an inventory control system using best buy’s API playground and React.</p>
-          </div>
-          <div className="proj">
-            <a className='project' href='https://andrewslentz.github.io/marvel-jquery/'><p>The World of Spider-Man</p><i className="smaller fa fa-arrow-right"></i></a>
-            <p className='description'>A searchable, card-style layout of Spider-Man characters from the Marvel developer API. Made with jQuery and AJAX.</p>
-          </div>
         </div>
         <div style={{margin: '2rem auto', color: '#FFEEB9'}} className='contact'>952-913-1436<br/>Andrew.S.Lentz@gmail.com</div>
       </div>
