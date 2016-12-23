@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Router, Route, browserHistory} from 'react-router';
-import { useBasename } from 'history'
+import {Router, Route, hashHistory} from 'react-router';
 import App from './App';
 import Portfolio from './Portfolio.js';
 import NoMatch from './NoMatch.js';
 import './index.css';
 
 ReactDOM.render((
-  <Router history={useBasename(() => browserHistory)({ basename: '/' })} onUpdate={() => window.scrollTo(0, 0)}>
+  <Router onUpdate={() => window.scrollTo(0, 0)} history={hashHistory}>
     <Route path="/" component={App} />
     <Route path="portfolio" component={Portfolio}/>
     <Route path="*" component={NoMatch}/>
