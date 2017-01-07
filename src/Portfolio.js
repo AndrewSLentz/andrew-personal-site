@@ -11,10 +11,6 @@ export default class Portfolio extends Component {
         </div>
         <div className="portfolio">
           <div className="proj">
-            <a className='project' href='https://bimini.herokuapp.com/'><p>Bimini</p><i className="smaller fa fa-arrow-right"></i></a>
-            <p className='description'>An example of an e-commerce site for an imaginary water company using react and axios.</p>
-          </div>
-          <div className="proj">
             <a className='project' href='https://andrewslentz.github.io/random-word-bookfinder/'><p>WordMe</p><i className="smaller fa fa-arrow-right"></i></a>
             <p className='description'>A web app that finds the definition and google book results for a randomly generated word or word of your choice. Uses jQuery, the google books API and the wordnik API.</p>
           </div>
