@@ -20,7 +20,7 @@ export default class Portfolio extends Component {
           </div>
           <div className="proj">
             <a className='project' href='https://vita-restaurants.github.io/vita-site/'><p>Club Vita</p><i className="smaller fa fa-arrow-right"></i></a>
-            <p className='description'>A website for a ficticious nighclub using HTML/CSS.</p>
+            <p className='description'>A website for a ficticious nightclub using HTML/CSS.</p>
           </div>
           <div className="proj">
             <a className='project' href='https://andrewslentz.github.io/bootstrap-proj/'><p>Visit Alaska</p><i className="smaller fa fa-arrow-right"></i></a>
